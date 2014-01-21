@@ -1,7 +1,9 @@
 RyanyuWebsite::Application.routes.draw do
   
-  get "static_pages/splash"
-  get "static_pages/home"
+  root  'static_pages#splash'
+
+  match '/home',                       to: 'static_pages#home',            via: 'get'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
