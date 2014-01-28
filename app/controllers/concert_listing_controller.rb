@@ -1,0 +1,2 @@
+class ConcertListingController < ApplicationController
+end
